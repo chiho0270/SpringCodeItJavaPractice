@@ -1,16 +1,14 @@
 package org.example.Head02_OOPprogramming.topic03_OOPConcept.example02;
 
-public class CreditCardPayment extends AbstractPayment {
+public class AccountTransferPayment extends AbstractPayment {
     @Override
     public void pay(double amount) {
         validatePayment(amount);
-        System.out.println("신용카드 결제 완료: " + amount + "원");
+        System.out.println("계좌이체 결제 완료: " + amount + "원");
     }
-
     @Override
     public void cancel(double amount) {
         validateCancel(amount);
-        System.out.println("신용카드 결제 취소: " + amount + "원");
+        System.out.println("계좌이체 결제 취소: " + amount + "원");
     }
 }
-
